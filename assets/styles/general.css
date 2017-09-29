@@ -66,28 +66,110 @@ html, body {
 
 .page {
     margin-top: 5em;
-    border: 2px solid black;
     min-height:90%;
-    position:relative}
-}
-
-lowerPage1 {
-    position:absolute;
-    left:0;
-    width:100%;
-    min-height:100%;
+    position:relative;
     display: grid;
-    grid-template-columns: 3fr 1fr 2fr;
+    grid-template-columns: 7fr 1fr 2fr;
+    grid-template-rows: auto;
+    grid-row-gap: 2em;
     grid-template-areas:
-        "content" . "rightbar";
+            "content1 . rightbar1"
+            "content2 . rightbar2"
+            "content3 . rightbar3";
+}
+@media (max-width: 767px) {
+    .page {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+                "content1"
+                "rightbar1"
+                "content2"
+                "rightbar2"
+                "content3"
+                "rightbar3";
+    }
 }
 
-.content {
-    width: 100%;
+
+.content1 {
     height: 100vm;
     border: 1px solid black;
-    grid-area: content;
+    grid-area: content1;
+    box-shadow: -10px 10px 5px gray;
+
 }
 
+.rightbar1 {
+    display: block;
+    width: 12em;
+    height: 12em;
+    margin-bottom: 2em;
+    cursor: pointer;
+    border: 10px inset darkgrey;
+    border-radius: 100px;
+    box-shadow: -10px 10px 5px gray;
+    margin-left: 1em;
+    grid-area: rightbar1;
+
+}
+
+.rightbar1:active {
+
+    box-shadow: -3px 5px #666;
+    transform: translateY(4px);
+}
+
+.content2 {
+    height: 100vm;
+    border: 1px solid black;
+    grid-area: content2;
+    box-shadow: -10px 10px 5px gray;
+}
+
+.rightbar2 {
+    display: block;
+    width: 12em;
+    height: 12em;
+    margin-bottom: 2em;
+    cursor: pointer;
+    border: 10px inset darkgrey;
+    border-radius: 100px;
+    box-shadow: -10px 10px 5px gray;
+    margin-left: 1em;
+    grid-area: rightbar2;
+
+}
+
+.rightbar2:active {
+
+    box-shadow: -3px 5px #666;
+    transform: translateY(4px);
+}
+.content3 {
+    height: 100vm;
+    border: 1px solid black;
+    grid-area: content3;
+    box-shadow: -10px 10px 5px gray;
+}
+
+.rightbar3 {
+    display: block;
+    width: 12em;
+    height: 12em;
+    margin-bottom: 2em;
+    cursor: pointer;
+    border: 10px inset darkgrey;
+    border-radius: 100px;
+    box-shadow: -10px 10px 5px gray;
+    margin-left: 1em;
+    grid-area: rightbar3;
+
+}
+
+.rightbar3:active {
+
+    box-shadow: -3px 5px #666;
+    transform: translateY(4px);
+}
 
 
