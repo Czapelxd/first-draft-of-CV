@@ -43,7 +43,7 @@ body {
 
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-    background-color: #ff6f2f;
+    background-color: grey;
 }
 
 .navbar-custom .navbar-toggle .icon-bar {
@@ -59,3 +59,35 @@ a.navbar-brand {
     width: auto;
     height: 100%;
 }
+
+html, body {
+    height:90%;
+}
+
+.page {
+    margin-top: 5em;
+    border: 2px solid black;
+    min-height:90%;
+    position:relative}
+}
+
+lowerPage1 {
+    position:absolute;
+    left:0;
+    width:100%;
+    min-height:100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr 2fr;
+    grid-template-areas:
+        "content" . "rightbar";
+}
+
+.content {
+    width: 100%;
+    height: 100vm;
+    border: 1px solid black;
+    grid-area: content;
+}
+
+
+
