@@ -8,4 +8,4 @@ http://gorillaz.jfdz6.is-academy.pl/
 
 https://baxy.pl/
 
-czapelxd.github.io
+https://czapelxd.github.io
