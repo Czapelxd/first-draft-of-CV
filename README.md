@@ -1,11 +1,11 @@
-#Michał Czaplicki,
+# Michał Czaplicki,
 
-###1000 pomysłów na min, to ja.
+### 1000 pomysłów na min, to ja.
 
-####Aktualnie pracuje nad:
+#### Aktualnie pracuje nad:
 
-#####http://gorillaz.jfdz6.is-academy.pl/
+##### http://gorillaz.jfdz6.is-academy.pl/
 
-#####https://baxy.pl/
+##### https://baxy.pl/
 
-#####[czapelxd.github.io](https://czapelxd.github.io)
+##### [czapelxd.github.io](https://czapelxd.github.io)
