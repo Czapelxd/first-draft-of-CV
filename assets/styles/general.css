@@ -5,9 +5,12 @@
 body {
     position: relative;
     font-family: 'Rubik', sans-serif;
+    padding-top: 70px;
 }
 
+
 /*NAVBAR*/
+
 
 .navbar-custom {
     background-color: black;
@@ -22,8 +25,6 @@ body {
 
 }
 
-.navbar-custom .navbar-brand:hover,
-.navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-nav > li > a:hover,
 .navbar-custom .navbar-nav > li > a:focus {
     color: grey;
@@ -58,15 +59,13 @@ a.navbar-brand {
 .navbar-img {
     width: auto;
     height: 100%;
+    padding: 5px;
 }
 
-html, body {
-    height:90%;
-}
+/*CONTENT*/
 
 .page {
-    margin-top: 5em;
-    min-height:90%;
+    min-height:100%;
     position:relative;
     display: grid;
     grid-template-columns: 7fr 1fr 2fr;
@@ -88,8 +87,20 @@ html, body {
                 "content3"
                 "rightbar3";
     }
+
 }
 
+@media (max-width: 1681px) {
+
+    .footer {
+        margin-top: 2em;
+    }
+
+    .foot {
+        position: relative;
+        clear:both;
+    }
+}
 
 .content1 {
     height: 100vm;
@@ -172,4 +183,20 @@ html, body {
     transform: translateY(4px);
 }
 
+.gif {
+    display: block;
+    margin: 0 auto;
+
+}
+
+.front-text {
+    padding: 1em;
+}
+
+:target:before {
+    content:"";
+    display:block;
+    height:90px; /* fixed header height*/
+    margin:-90px 0 0; /* negative fixed header height */
+}
 
