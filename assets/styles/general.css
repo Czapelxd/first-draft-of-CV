@@ -86,6 +86,8 @@ a.navbar-brand {
 }
 
 .page {
+    padding-top:70px;
+    margin-top:-70px;
     min-height:100%;
     position:relative;
     display: grid;
@@ -204,7 +206,7 @@ a.navbar-brand {
 
 .footer {
     grid-area: footer;
-    padding-top: 3em;
+    padding-top: 2em;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -217,10 +219,4 @@ a.navbar-brand {
     text-decoration-color: #777;
 }
 
-:target:before {
-    content:"";
-    display:block;
-    height:90px; /* fixed header height*/
-    margin:-90px 0 0; /* negative fixed header height */
-}
 
