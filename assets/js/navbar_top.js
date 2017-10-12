@@ -1,3 +1,5 @@
-$("#home").click( function() {
-    $(window).scrollTop(0);
+$(document).ready(function(){
+    $(".next").click(function(){
+        $(".hello").fadeOut()
+    });
 });
