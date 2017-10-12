@@ -206,7 +206,6 @@ a.navbar-brand {
 
 .footer {
     grid-area: footer;
-    padding-top: 2em;
     position: absolute;
     bottom: 0;
     width: 100%;
