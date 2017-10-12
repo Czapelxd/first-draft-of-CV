@@ -2,10 +2,15 @@
     box-sizing: border-box;
 }
 
-body {
+html {
     position: relative;
+    min-height: 100%;
+}
+
+body {
     font-family: 'Rubik', sans-serif;
     padding-top: 70px;
+    margin-bottom: 60px;
 }
 
 
@@ -15,6 +20,7 @@ body {
 .navbar-custom {
     background-color: black;
     border-color: black;
+    grid-area: menu;
 }
 
 .navbar-custom .navbar-brand,
@@ -64,6 +70,21 @@ a.navbar-brand {
 
 /*CONTENT*/
 
+.wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 2em;
+    grid-template-areas:
+            "menu"
+            "content"
+            "footer"
+}
+
+.content {
+    grid-area: content;
+}
+
 .page {
     min-height:100%;
     position:relative;
@@ -88,20 +109,6 @@ a.navbar-brand {
                 "rightbar3";
     }
 
-}
-
-@media (max-width: 992px) {
-
-    .footer {
-        margin-top: 2em;
-        bottom: 0;
-    }
-
-    .foot {
-        position: relative;
-        clear:both;
-        bottom: 0;
-    }
 }
 
 .content1 {
@@ -193,6 +200,21 @@ a.navbar-brand {
 
 .front-text {
     padding: 1em;
+}
+
+.footer {
+    grid-area: footer;
+    padding-top: 3em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.foot {
+    background-color: #f8f8f8;
+    border-top: 1px solid  #e7e7e7;
+    text-decoration-color: #777;
 }
 
 :target:before {
