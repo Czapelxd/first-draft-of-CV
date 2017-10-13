@@ -1,6 +1,6 @@
 # Michał Czaplicki,
 
-### 1000 pomysłów na min, to ja.
+### 1000 pomysłów na minute, to ja.
 
 #### Aktualnie pracuje nad:
 
