@@ -1,110 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Michał Czaplicki</title>
     <meta charset="UTF-8">
-    <meta name="author" content="Czapelxd">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="assets/styles/reset.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
-    <link rel="stylesheet" href="assets/styles/general.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-blue.min.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+   <link rel="stylesheet" href="assets/styles/general.css">
+    <link ref="stylesheet" href="assets/styles/reset.css">
+
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+
 </head>
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-tabs mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll ">
+        <div class="mdl-layout__header-row navbar">
+            <!-- Title -->
+            <span class="mdl-layout-title">Title</span>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+        </div>
+    </header>
 
-<body class="wrap">
-
-<header>
-    <div class="head">
-        <nav class="navbar navbar-custom navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand">
-                        <img src="assets/images/pen.png" alt="navbar logo" class="navbar-img">
-                    </a>
-                </div>
-
-                <div class="collapse navbar-collapse" id="navbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li onclick="show0()" id="home">
-                            <a href="#intro" class="hidden-xs">HOME</a>
-                            <a href="#intro" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">HOME</a>
-                        </li>
-                        <li onclick="show1()" >
-                            <a href="#1" class="hidden-xs">PAGE1</a>
-                            <a href="#1" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">PAGE1</a>
-                        </li>
-                        <li onclick="show2()" >
-                            <a href="#2" class="hidden-xs">PAGE2</a>
-                            <a href="#2" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">PAGE2</a>
-                        </li>
-                        <li onclick="show3()" >
-                            <a href="#3" class="hidden-xs">PAGE3</a>
-                            <a href="#3" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">PAGE3</a>
-                        </li>
-                    </ul>
+    <main class="mdl-layout__content">
+        <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+            <div class="page-content">
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--3-col"></div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <p>Hi! I'm Mike and this is short tour about myself. I gona show who I am and what am I doing.</p>
+                        <div class="imge">
+                            <img class="img-responsive imge" src="assets/images/Man-using-mobile.png">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col"></div>
                 </div>
             </div>
-        </nav>
-    </div>
-</header>
-
-<main class="content">
-
-    <section class="page container" id="intro">
-        <div class="hello">
-            <div class="bubble">
-                <p class="text">Cześć! Nazywam się Michał, a to jest mały przewodnik po tym kim jest oraz czym się aktualnie zajmuje!</p>
-            </div>
-            <img src="assets/images/Man-using-mobile.png" class="img img-responsive">
-                <a onclick="show1()" href="#1" class="navbar-btn btn-info btn pull-right next">
-                    Zacznij zwiedzać
-                </a>
+        </section>
+        <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+            <div class="page-content"><!-- Your content goes here --></div>
+        </section>
+        <section class="mdl-layout__tab-panel" id="fixed-tab-3">
+            <div class="page-content"><!-- Your content goes here --></div>
+        </section>
+    </main>
+    <footer class="mdl-mini-footer">
+        <div class="mdl-mini-footer__left-section">
+            <div class="mdl-logo">Develop by Mr. C</div>
         </div>
-    </section>
+        <div class="mdl-mini-footer__right-section">
+            <a target="_blank" href="http://infoshareacademy.com/">
+            <button class="mdl-js-button mdl-button--raised mdl-button--accent mdl-button mdl-js-button mdl-js-ripple-effect">
+                inspired by infoShare Academy
+            </button>
+            </a>
 
-    <section class="page container" id="1" style="display: none">
-        <h1>1</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cum doloremque exercitationem hic in iure necessitatibus nulla recusandae repellendus repudiandae. A eligendi exercitationem ipsam iure nostrum, pariatur porro quia Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci impedit ipsum, magnam minima non sequi vero voluptas. Alias aut doloribus harum impedit magni minus nostrum pariatur praesentium, qui rerum sunt.
-        </p>
-        <img src="https://media.giphy.com/media/lf9PrYyjFOQta/giphy.gif" class="gif img-responsive">
-    </section>
-
-    <section class="page container" id="2"  style="display: none">
-        <h1>2</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cum doloremque exercitationem hic in iure necessitatibus nulla recusandae repellendus repudiandae. A eligendi exercitationem ipsam iure nostrum, pariatur porro quia Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci impedit ipsum, magnam minima non sequi vero voluptas. Alias aut doloribus harum impedit magni minus nostrum pariatur praesentium, qui rerum sunt.
-        </p>
-        <img src="https://media.giphy.com/media/lf9PrYyjFOQta/giphy.gif" class="gif img-responsive">
-    </section>
-
-    <section class="page container" id="3"  style="display: none">
-        <h1>3</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cum doloremque exercitationem hic in iure necessitatibus nulla recusandae repellendus repudiandae. A eligendi exercitationem ipsam iure nostrum, pariatur porro quia Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci impedit ipsum, magnam minima non sequi vero voluptas. Alias aut doloribus harum impedit magni minus nostrum pariatur praesentium, qui rerum sunt.
-        </p>
-        <img src="https://media.giphy.com/media/lf9PrYyjFOQta/giphy.gif" class="gif img-responsive">
-    </section>
-
-</main>
-
-<footer class="footer">
-        <div class="foot">
-            <div class="container">
-                <p class="navbar-text pull-left">© 2017 - Site Built By Mr. C.</p>
-                <a target="_blank" href="http://infoshareacademy.com/" class="navbar-btn btn-danger btn pull-right">
-                <span class="glyphicon glyphicon-star"></span>  Inspired by infoShare Academy</a>
-            </div>
         </div>
-</footer>
-
-<!--<script src="assets/js/navbar_top.js"></script>-->
-<script src="assets/js/hide_and_seak.js"></script>
+    </footer>
+</div>
 
 </body>
-
 </html>

@@ -1,144 +1,25 @@
-* {
-    box-sizing: border-box;
+.mdl-layout__header {
+    height: 64px;
 }
 
-html {
-    position: relative;
-    min-height: 100%;
-}
-
-body {
-    font-family: 'Rubik', sans-serif;
-    padding-top: 70px;
-    margin-bottom: 60px;
-}
-
-
-/*NAVBAR*/
-
-
-.navbar-custom {
-    background-color: black;
-    border-color: black;
-
-}
-
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-nav > li > a {
-    color: white;
-    font-weight: 600;
-    letter-spacing: 1.5px;
-
-}
-
-.navbar-custom .navbar-nav > li > a:hover,
-.navbar-custom .navbar-nav > li > a:focus {
-    color: grey;
-    background-color: white;
-}
-
-.navbar-custom .navbar-nav > .active > a,
-.navbar-custom .navbar-nav > .active > a:hover,
-.navbar-custom .navbar-nav > .active > a:focus {
-    color: grey;
-    background-color: white;
-}
-
-.navbar-custom .navbar-toggle {
-    border-color: white;
-}
-
-.navbar-custom .navbar-toggle:hover,
-.navbar-custom .navbar-toggle:focus {
-    background-color: grey;
-}
-
-.navbar-custom .navbar-toggle .icon-bar {
-    background-color: white;
-}
-
-a.navbar-brand {
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-.navbar-img {
-    width: auto;
-    height: 100%;
+.mdl-mini-footer {
+    background-color: #3f51b5;
     padding: 5px;
 }
 
-/*CONTENT*/
-
-.page {
-    padding-top:70px;
-    margin-top:-70px;
+ a {
+    color: #ffffff;
+     text-decoration: none;
 }
 
-.hello {
-    font-family: 'Gloria Hallelujah', cursive;
-    text-align: center;
+ .mdl-cell {
+     text-align: center;
+ }
 
-}
-p.text {
-    font-size: x-large;
-    line-height: 200%;
-}
-
-.bubble {
-    position: relative;
-}
+ .imge {
+     display: block;
+     margin: 0 auto;
+ }
 
 
-.img {
-    position: relative;
-    display: block;
-    margin: 0 auto;
-}
-
-.gif {
-    display: block;
-    margin: 0 auto;
-}
-
-
-.front-text {
-    padding: 1em;
-}
-
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-}
-
-.foot {
-    background-color: #f8f8f8;
-    border-top: 1px solid  #e7e7e7;
-    text-decoration-color: #777;
-}
-
-/*MEDIAQUERY*/
-
-@media (max-width: @screen-sd-max) {
-
-    p.text {
-        font-size: medium;
-        line-height: 200%;
-    }
-
-
-}
-
-@media (min-width: 760px) {
-
-    .hello {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-}
 
